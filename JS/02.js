@@ -34,7 +34,7 @@ redMarker.print(
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus nunc at faucibus posuere. In eu vulputate eros. Etiam consequat laoreet dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis commodo, turpis mollis efficitur iaculis, nunc magna pellentesque nulla, ac imperdiet mauris diam quis turpis. Maecenas imperdiet velit urna, non convallis augue tincidunt vel. Nullam malesuada vestibulum augue vitae accumsan. Nam non purus accumsan, porta risus quis, suscipit tortor."
 );
 
-class FillMarker {
+class FillMarker extends Marker {
     constructor(_color, _quantity, _newQuantity) {
         super(_color, _quantity);
         this.newQuantity = _newQuantity;
@@ -42,7 +42,7 @@ class FillMarker {
     print(text) {
         console.log(text.length);
         let styles = `color: ${this.color}`;
-        let textLength = Math.floor((100 / 0.5) * (this._quantity + this.newQuantity));
+        let textLength = Math.floor((100 / 0.5) * (this.quantity + this.newQuantity));
         let spaces = 0;
         for (let i = 0; i < textLength; i++) {
             if (text[i] == " ") {
