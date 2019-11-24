@@ -54,7 +54,7 @@ class FillMarker extends Marker {
         document.write(`<p style= "${styles}">${text}</p>`);
     }
 }
-let pinkMarker = new FillMarker("pink", 0.2, 0.1);
+let pinkMarker = new FillMarker("black", 0.2, 0.1);
 pinkMarker.print("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus nunc at faucibus posuere. In eu vulputate eros. Etiam consequat laoreet dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis commodo, turpis mollis efficitur iaculis, nunc magna pellentesque nulla, ac imperdiet mauris diam quis turpis. Maecenas imperdiet velit urna, non convallis augue tincidunt vel. Nullam malesuada vestibulum augue vitae accumsan. Nam non purus accumsan, porta risus quis, suscipit tortor.");
 
 
